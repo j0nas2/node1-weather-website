@@ -9,7 +9,7 @@ const forecast= (lat,long,callback) => {
         } else if (body.error) {
             callback('unable to find location', undefined)
         } else {
-            callback(undefined, body.daily.data[0].summary+' Current temperature: '+body.currently.temperature+'°c + ' + 'rain: '+body.currently.precipProbability+ '% chance')
+            callback(undefined, body.daily.data[0].summary+' Current temperature: '+body.currently.temperature+'°c + ' + 'rain: '+body.currently.precipProbability+ '% chance. Maximal temperature will rise to '+body.daily.data[3].temperatureMax)
         }
     })
 }
