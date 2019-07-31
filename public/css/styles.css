@@ -22,19 +22,22 @@ header{
 h1{
     font-size: 56px;
     margin-bottom: 16px;
+    color: #4ea3ff
 }
-header a{
-    color: #888888;
+header div {
+    background-color: #4ea3ff;
+    padding: 10px 5px
+}
+header div a{
     margin-right: 16px;
     text-decoration: none;
+    color: white;
 }
 img{
     width: 250px;
 }
 .main-content{
     flex-grow:1;
-
-
 }
 input{
     border: 1px solid #cccccc;
